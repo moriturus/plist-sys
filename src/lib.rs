@@ -48,7 +48,7 @@ extern "C" {
     pub fn plist_new_date(sec: int32_t, usec: int32_t) -> Plist;
     pub fn plist_new_uid(val: uint64_t) -> Plist;
     pub fn plist_free(plist: Plist);
-    pub fn plist_copy(node: Plist);
+    pub fn plist_copy(node: Plist) -> Plist;
 }
 
 // Array functions
@@ -122,7 +122,7 @@ extern "C" {
     pub fn plist_compare_node_value(node_l: Plist, node_r: Plist) -> c_char;
 }
 
-/// Compares `node`'s type with `plist_type`. 
+/// Compares `node`'s type with `plist_type`.
 ///
 /// If `node` is null, returns `false`.
 pub unsafe fn plist_is_type(node: Plist, plist_type: PlistType) -> bool {
