@@ -2,7 +2,7 @@
 authors = ["Henrique Sasaki Yuya <moriturus@alimensir.com>"]
 build = "build.rs"
 name = "plist-sys"
-version = "0.1.3"
+version = "0.1.4"
 description = "Raw bindings to the libplist library."
 keywords = ["plist", "libplist"]
 categories = ["api-bindings"]

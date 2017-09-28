@@ -54,7 +54,7 @@ extern "C" {
 // Array functions
 extern "C" {
     pub fn plist_array_get_size(node: Plist) -> uint32_t;
-    pub fn plist_array_get_item(node: Plist, n: uint32_t);
+    pub fn plist_array_get_item(node: Plist, n: uint32_t) -> Plist;
     pub fn plist_array_get_item_index(node: Plist) -> uint32_t;
     pub fn plist_array_set_item(node: Plist, item: Plist, n: uint32_t);
     pub fn plist_array_append_item(node: Plist, item: Plist);
