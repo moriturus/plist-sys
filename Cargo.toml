@@ -2,12 +2,13 @@
 authors = ["Henrique Sasaki Yuya <moriturus@alimensir.com>"]
 build = "build.rs"
 name = "plist-sys"
-version = "0.1.0"
+version = "0.1.1"
 description = "Raw bindings to the libplist library."
 keywords = ["plist", "libplist"]
 categories = ["API bindings"]
 license = "MIT"
-
+homepage = "https://github.com/moriturus/plist-sys"
+repository = "https://github.com/moriturus/plist-sys.git"
 
 [build-dependencies]
 pkg-config = "0.3.9"
