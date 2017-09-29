@@ -33,8 +33,8 @@ pub mod plist_type;
 use libc::{c_char, c_double, c_void, int32_t, int8_t, uint32_t, uint64_t, uint8_t};
 pub use plist_type::PlistType;
 
-type Plist = *mut c_void;
-type PlistDictIter = *mut c_void;
+pub type Plist = *mut c_void;
+pub type PlistDictIter = *mut c_void;
 
 // Creation and destruction.
 extern "C" {
